@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My first three.js app</title>
+		<style>
+			body { margin: 0;}
+			canvas { width: 100%; height: 50%; color: #ffffff; }
+		</style>
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+      <div class = "cubeCanvas">
+        <h1>ali pereira</h1>
+        <div class = "navbar">
+          <ul>
+            <li><a href = "#">About</a></li>
+            <li><a href = "#">Projects</a></li>
+            <li><a href = "#">Experience</a></li>
+          </ul>
+        </div>
+        <canvas height=200 id = "canvas"></canvas>
+          <script src="/bower_components/three.js/build/three.js"></script>
+        <!-- build:js scripts/main.js -->
+        <script>
+        function onResize(element,callback){
+          var height = element.clientHeight;
+          var width = element.clientWidth;
+
+          return setInterval(function(){
+
+            if(element.clientHeight != height || element.clientWidth != width){
+              height = element.clientHeight;
+              width = element.clientWidth;
+              callback();
+
+            }
+          }, 500);
+        }
+        </script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+      </div>
+
+      <div class="footer">
+        <p>♥ from the Ali team</p>
+      </div>
+
+    </div>
+    <div class = "about">
+      Hello my name is Ali.
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/three.js/build/three.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
